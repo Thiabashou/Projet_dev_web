@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+   
 }
 
 header {
@@ -31,12 +32,16 @@ header {
 }
 main {
             flex: 1; /* Utilise tout l'espace disponible */
-            padding: 500px;
+            padding: 250px;
             height: 100%;
+            background-image: url('{{ asset('C:\laragon\www\ProjetDON\public\images\background.png') }}')
+      
+            background-size: conten;
+            background-repeat: no-repeat;
         }
 
 footer {
-            background-color: #333333;
+            background-color: #1E2833;
             color: #ffffff;
             padding: 20px;
             text-align: center;
@@ -69,8 +74,16 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
-.fond {
-    background-image: url('{{ asset('images/background.png') }}');
+
+
+button {
+    background-color: #000000;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    width: 18%;
+    height: 15%;
+
 }
 
 </style>
@@ -101,14 +114,33 @@ nav ul li a:hover {
                     </li>
                     </ul>
                 </nav>
-                
             </header>
-            <main class="fond">
-               
+            <main>
+                <div align="right" class="blood">
+                    <h1>Save life Donate Blood</h1>
+                    <p>Explorez notre site pour en apprendre davantage sur le processus de don, où donner, et comment vous pouvez aider à sauver des vies dès aujourd'hui. Rejoignez-nous dans cette noble cause et ensemble, faisons du Sénégal un endroit où personne ne manque de sang quand il en a besoin.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <button><h4>Get Blood Now</h4></button>
+                 </div>
+                
+            
+            x
+            
 
             </main>
             <footer>
-                <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
+                <img src="{{URL('images/foot.png')}}" alt="">
+                <p>
+                    <div align="left" >
+                        Suscribe to our <br>newsletter
+                        <p align="center">Services</p>
+                        
+                    </div>
+
+                </p>
+                <p>Email address</p><br>
             </footer>
           
         </div>

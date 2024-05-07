@@ -76,11 +76,13 @@ body {
 
 .First {
    background-color: #fff;
-   border-radius: 18px;
+   border-radius: 30px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    padding: 100px;
-   max-width: 100px;
-   width: 100%;
+   max-width: 80%;
+   width: 80%;
+   align-content: center;
+   margin-bottom: 10px;
 }
 
 header {
@@ -92,20 +94,7 @@ header {
     align-items: center;
 }
 
-main {
-            flex: 1; /* Utilise tout l'espace disponible */
-            padding: 200px;
-            height: 100%;
-        }
 
-footer {
-            background-color: #333333;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            text-align: center;
-            margin-top: auto;
-        }
 
 
 nav ul {
@@ -157,7 +146,7 @@ h2 {
 }
 
 .btn {
-   background-color: #007bff;
+   background-color: #000000;
    color: #fff;
    padding: 10px 20px;
    border: none;
@@ -168,7 +157,19 @@ h2 {
 }
 
 .btn:hover {
-   background-color: #0056b3;
+   background-color: #000000;
+}
+
+.test {
+    background-color:#5a0117;
+    color: white ;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+    text-align: right;
+    text-align: right;
+    margin-top: auto;
+
 }
 
    </style>
@@ -185,44 +186,59 @@ h2 {
         </li>
         </ul>
     </nav>
-    
+   
+       
 </header>
-<main class="fond">
-    <form action="POST" class="First">
-        <h2>Inscription</h2>
-        <label for="usrname">Nom d'utilisateur :</label><br>
+<nav class="test">
+    <h2>Register As Donor</h2>
+</nav>
+
+    
+    <form action="POST" class="First" style="width: 100%;">
+      
+        <label for="usrname">Full name</label>
+        <input type="text" id="username" name="username">
         <input type="text" id="username" name="username"><br><br>
         
-        <label for="password">Mot de passe :</label><br>
+
+        <label for="number">Phone Number</label>
+        <input type="number" id="username" name="username"><br><br>
+
+        <label for="mail">E-mail </label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="Address">Address</label>
+        <input type="address" id="address" name="address">
+
+        <label for="Age">Age</label>
+        <input type="Age" id="Age" name="Age">
+
+        <select id="blood_group" name="blood_group">
+            <div>
+            
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </div>
+        </select><br>
+        <br>
+        
+        <label for="password">Mot de passe </label>
         <input type="password" id="password" name="password"><br><br>
         
-        <label for="date">Date de Naissance :</label><br>
+        <label for="date">Date de Naissance :</label>
         <input type="date" id="DDN" name="DDN"><br><br>
 
-        <label for="mail">E-mail :</label><br>
-        <input type="email" id="email" name="email"><br>
-        <br>
-        <div>
-            <label for="blood_group">Groupe sanguin :</label><br>
-            <select id="blood_group" name="blood_group">
-                <option value="A+">A+</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
-            </select>
-        </div><br><br>
+       
         
-        <button class="btn">S'inscrire</button>
+        <button class="btn" >Submit</button>
     </form>          
 
-</main>
-<footer>
-    <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
-</footer>
 
 </body>
 </html>
