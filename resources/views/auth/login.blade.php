@@ -56,25 +56,72 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ProjetDON</title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+
+body {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .First {
     background-color: #fff;
     border-radius: 18px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    max-width: 300px;
+    padding: 100px;
+    max-width: 100px;
     width: 100%;
 }
+
+header {
+    background-color: #fdfdfd;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+            flex: 1; /* Utilise tout l'espace disponible */
+            padding: 200px;
+            height: 100%;
+        }
+
+footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            text-align: center;
+            margin-top: auto;
+        }
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 
 h2 {
     text-align: center;
@@ -116,7 +163,20 @@ h2 {
     </style>
  </head>
  <body>
+    <header>
+        <h1>LifeSaver</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Find Blood</a></li>
 
+        </li>
+        </ul>
+    </nav>
+    
+</header>
+    <main class="fond">
     <form action="POST" class="First">
         <h2>Connexion</h2>
         <label for="Prenom">Email</label><br>
@@ -125,6 +185,9 @@ h2 {
         <input type="password"><br><br>
         <button class="btn">Se connecter</button>
     </form>
-    
+</main>
+<footer>
+    <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
+</footer>
  </body>
  </html>

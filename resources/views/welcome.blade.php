@@ -69,6 +69,9 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+.fond {
+    background-image: url('{{ asset('images/background.png') }}');
+}
 
 </style>
         
@@ -100,7 +103,7 @@ nav ul li a:hover {
                 </nav>
                 
             </header>
-            <main style="background-image: url('{{ asset('images/background.png') }}');">
+            <main class="fond">
                
 
             </main>
