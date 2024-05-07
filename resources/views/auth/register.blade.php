@@ -78,7 +78,7 @@ body {
    background-color: #fff;
    border-radius: 18px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   padding: 70px;
+   padding: 100px;
    max-width: 100px;
    width: 100%;
 }
